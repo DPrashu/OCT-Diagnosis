@@ -11,13 +11,7 @@ A Deep Learning-based web application that detects and classifies **retinal dise
 - [✨ Features](#-features)
 - [📂 Dataset](#-dataset)
 - [📊 Model Architecture](#-model-architecture)
-- [🧠 Model Training](#-model-training)
 - [🚀 How to Use](#-how-to-use)
-- [🖼️ Sample Predictions](#-sample-predictions)
-- [📁 Project Structure](#-project-structure)
-- [📦 Requirements](#-requirements)
-- [📌 Future Work](#-future-work)
-- [🙌 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -50,27 +44,12 @@ The dataset used is from **Kaggle's OCT & OCT Angiography** dataset:
 ## 📊 Model Architecture
 
 - Backbone: Custom **Convolutional Neural Network (CNN)**
-- Input size: 224x224 RGB images
 - Output: 4-class softmax
-- Activation: ReLU
+- Activation: ReLU and Softmax
 - Trained with **CrossEntropyLoss** and **Adam optimizer**
 
 > 🔍 The model was saved using `model.state_dict()` and later reloaded for prediction in the deployed app.
 
----
-
-## 🧠 Model Training
-
-- **Framework**: PyTorch
-- **Image Preprocessing**:
-  - Resize to (224, 224)
-  - Normalize: mean=0.5, std=0.5
-- **Augmentation**:
-  - Random horizontal flips
-  - Random rotations
-- **Validation Accuracy**: ~98% on balanced test set
-
----
 
 ## 🚀 How to Use
 
