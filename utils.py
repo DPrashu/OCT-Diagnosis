@@ -47,7 +47,7 @@ def preprocess(image):
 def predict(image):
   idx_to_label = {0:'CNV',1:'DME',2:'Drusen',3:'Normal'}
   model = MyNetwork()
-  model.load_state_dict(torch.load('/content/drive/MyDrive/DriveApp/CNNProject/model_weights28.pth',map_location=torch.device("cpu")))
+  model.load_state_dict(torch.load('model_weights28.pth',map_location=torch.device("cpu")))
   model.eval()
 
   with torch.no_grad():
