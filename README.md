@@ -6,6 +6,18 @@ A Deep Learning-based web application that detects and classifies **retinal dise
 
 ---
 
+## ❓ Problem Statement
+
+With the advancement of imaging technologies in ophthalmology, **millions of OCT (Optical Coherence Tomography) scans are generated globally each year** to detect and monitor retinal diseases. However, analyzing these scans manually requires time, clinical expertise, and resources — making it difficult to serve remote or under-resourced areas.
+
+This project provides an **automated, AI-powered solution** that:
+- Speeds up the **diagnosis process**
+- Reduces the **workload of ophthalmologists**
+- Improves **early detection and treatment** of critical eye diseases
+- Makes diagnosis **accessible** via a lightweight and interactive web interface
+
+---
+
 ## 📌 Table of Contents
 
 - [✨ Features](#-features)
@@ -50,6 +62,7 @@ The dataset used is from **Kaggle's OCT & OCT Angiography** dataset:
 
 > 🔍 The model was saved using `model.state_dict()` and later reloaded for prediction in the deployed app.
 
+---
 
 ## 🚀 How to Use
 
@@ -64,4 +77,3 @@ git clone https://github.com/yourusername/oct-diagnosis.git
 cd oct-diagnosis
 pip install -r requirements.txt
 streamlit run app.py
-
